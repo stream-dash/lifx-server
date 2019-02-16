@@ -27,7 +27,8 @@
   "scripts": {
     "start": "node ./src",
     "lint": "flow && xo",
-    "test": "flow && xo && ava"
+    "test": "flow && xo && ava",
+    "lint:soft": "xo"
   },
   "repository": {
     "type": "git",
@@ -45,7 +46,7 @@
   },
   "homepage": "https://github.com/stream-dash/lifx-server#readme",
   "pre-commit": [
-    "lint"
+    "lint:soft"
   ],
   "xo": {
     "parser": "babel-eslint",
